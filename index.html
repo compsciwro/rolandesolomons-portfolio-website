@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================= -->
+  <!-- SEO / SOCIAL META  — edit the text below to match your brand  -->
+  <!-- ============================================================= -->
+  <title>Rolande Solomons | Software Developer & AR Engineer</title>
+  <meta name="description" content="Portfolio of Rolande Solomons — Computer Science graduate, software developer, and AR / interactive systems engineer." />
+  <meta name="author" content="Rolande Solomons" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated gradient background blobs (decorative) -->
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner">
+      <a href="#hero" class="logo">RS<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero" id="hero">
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">👋 Hi there, my name is</p>
+      <h1 class="hero-name">Rolande Solomons</h1>
+
+      <!-- Animated rotating title -->
+      <h2 class="hero-title">
+        <span class="static-text">I'm a </span>
+        <span class="typed" id="typed"></span>
+      </h2>
+
+      <p class="hero-intro">
+        A Computer Science graduate who loves turning ideas into polished,
+        interactive software. I build everything from augmented‑reality
+        experiences to clean web apps — always chasing that mix of solid
+        engineering and great design.
+      </p>
+
+      <!-- Hero buttons -->
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-folder-open"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+
+        <!-- TODO: Replace the # below with your real GitHub & LinkedIn URLs -->
+        <a href="https://github.com/your-username" target="_blank" rel="noopener" class="btn btn-icon" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" class="btn btn-icon" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ====================== ABOUT ====================== -->
+  <section class="section" id="about">
+    <div class="section-head reveal">
+      <span class="section-tag">01</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>Computer Science graduate</strong> with a genuine passion
+          for building software that feels good to use. My background gave me a
+          strong foundation in programming, problem‑solving and systems thinking —
+          and I've spent a lot of time pushing that into hands‑on projects.
+        </p>
+        <p>
+          I'm especially drawn to <strong>augmented reality and interactive
+          applications</strong>, where design and engineering meet. Whether it's
+          an AR encyclopedia, a reinforcement‑learning game, or a clean responsive
+          interface, I care about the details that make an experience feel
+          professional.
+        </p>
+        <p>
+          I'm always learning, always shipping, and looking for opportunities to
+          grow as a developer on real‑world products.
+        </p>
+      </div>
+
+      <!-- Quick facts card -->
+      <div class="about-card glass reveal">
+        <div class="fact">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <h4>Education</h4>
+            <p>BSc Computer Science</p>
+          </div>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-vr-cardboard"></i>
+          <div>
+            <h4>Focus</h4>
+            <p>AR &amp; Interactive Systems</p>
+          </div>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-code"></i>
+          <div>
+            <h4>Building With</h4>
+            <p>Python · C# · Unity · JS</p>
+          </div>
+        </div>
+        <div class="fact">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Open To</h4>
+            <p>Internships &amp; Junior Roles</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PROJECTS ====================== -->
+  <section class="section" id="projects">
+    <div class="section-head reveal">
+      <span class="section-tag">02</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-sub">A selection of things I've designed, built and broken.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- ---------- Project Card: Portfolio Website ---------- -->
+      <article class="project-card glass reveal">
+        <div class="project-top">
+          <i class="fa-solid fa-laptop-code project-icon"></i>
+          <div class="project-links">
+            <!-- TODO: replace with your repo / demo links -->
+            <a href="https://github.com/your-username/portfolio-website" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Live demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>Portfolio Website</h3>
+        <p class="project-desc">
+          This very site — a modern, animated personal portfolio built from scratch
+          to showcase my work to recruiters and collaborators.
+        </p>
+        <p class="project-role"><strong>My role:</strong> Designed the UI, wrote all the layout, animations and responsive logic by hand.</p>
+        <ul class="tech-list">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+        </ul>
+      </article>
+
+      <!-- ---------- Project Card: Solar System AR ---------- -->
+      <article class="project-card glass reveal">
+        <div class="project-top">
+          <i class="fa-solid fa-sun project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/your-username/solar-system-ar" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Screenshots"><i class="fa-solid fa-images"></i></a>
+          </div>
+        </div>
+        <h3>Solar System Encyclopedia — AR App</h3>
+        <p class="project-desc">
+          An augmented‑reality encyclopedia that lets users explore the planets in
+          3D space, with interactive facts and scale models you can place in the real world.
+        </p>
+        <p class="project-role"><strong>My role:</strong> Built the AR tracking, 3D interactions and information UI inside Unity.</p>
+        <ul class="tech-list">
+          <li>Unity</li><li>C#</li><li>Vuforia</li><li>3DS Max</li>
+        </ul>
+      </article>
+
+      <!-- ---------- Project Card: Bloomward / RL ---------- -->
+      <article class="project-card glass reveal">
+        <div class="project-top">
+          <i class="fa-solid fa-brain project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/your-username/bloomward" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>Bloomward — Reinforcement Learning Game</h3>
+        <p class="project-desc">
+          A game project paired with a reinforcement‑learning agent that learns to
+          play through trial, reward and iteration — exploring how AI behaves in a
+          custom environment.
+        </p>
+        <p class="project-role"><strong>My role:</strong> Designed the environment, reward system and trained / evaluated the RL agent.</p>
+        <ul class="tech-list">
+          <li>Python</li><li>Reinforcement Learning</li><li>Unity</li>
+        </ul>
+      </article>
+
+      <!-- ---------- Project Card: Nelson Mandela AR ---------- -->
+      <article class="project-card glass reveal">
+        <div class="project-top">
+          <i class="fa-solid fa-landmark project-icon"></i>
+          <div class="project-links">
+            <a href="https://github.com/your-username/mandela-ar" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Screenshots"><i class="fa-solid fa-images"></i></a>
+          </div>
+        </div>
+        <h3>Nelson Mandela — AR Experience</h3>
+        <p class="project-desc">
+          An educational augmented‑reality experience celebrating the legacy of
+          Nelson Mandela, bringing historical content to life through interactive
+          3D storytelling.
+        </p>
+        <p class="project-role"><strong>My role:</strong> Developed the AR scenes, image‑target tracking and narrative flow.</p>
+        <ul class="tech-list">
+          <li>Unity</li><li>C#</li><li>Vuforia</li>
+        </ul>
+      </article>
+
+      <!-- ---------- Placeholder Project (edit me!) ---------- -->
+      <article class="project-card glass reveal">
+        <div class="project-top">
+          <i class="fa-solid fa-plus project-icon"></i>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener" aria-label="GitHub repo"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>Your Next Project</h3>
+        <p class="project-desc">
+          <!-- TODO: Replace this card with a new project whenever you build one.
+               Copy the structure of any card above. -->
+          A placeholder card ready for your next idea. Duplicate any card above and
+          swap the title, description and tech stack.
+        </p>
+        <p class="project-role"><strong>My role:</strong> Coming soon.</p>
+        <ul class="tech-list">
+          <li>TBD</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ====================== SKILLS ====================== -->
+  <section class="section" id="skills">
+    <div class="section-head reveal">
+      <span class="section-tag">03</span>
+      <h2 class="section-title">Skills &amp; Tools</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group glass reveal">
+        <h3><i class="fa-solid fa-code"></i> Programming</h3>
+        <div class="chips">
+          <span>Python</span><span>Java</span><span>C#</span>
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass reveal">
+        <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+        <div class="chips">
+          <span>GitHub</span><span>Git</span><span>Unity</span>
+          <span>Vuforia</span><span>3DS Max</span><span>Adobe Photoshop</span>
+        </div>
+      </div>
+
+      <div class="skill-group glass reveal">
+        <h3><i class="fa-solid fa-layer-group"></i> Development Areas</h3>
+        <div class="chips">
+          <span>AR Development</span><span>Web Development</span>
+          <span>Game Development</span><span>UI Design</span>
+          <span>Research Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== EDUCATION ====================== -->
+  <section class="section" id="education">
+    <div class="section-head reveal">
+      <span class="section-tag">04</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item glass reveal">
+        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="timeline-body">
+          <h3>BSc Computer Science</h3>
+          <!-- TODO: Update institution name and years -->
+          <p class="timeline-meta">Your University · Graduated</p>
+          <p>
+            Built a strong foundation in algorithms, software development, data
+            structures and systems — with project work spanning AR, game
+            development and research.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CONTACT ====================== -->
+  <section class="section" id="contact">
+    <div class="section-head reveal">
+      <span class="section-tag">05</span>
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-sub">Have a role, project or idea? I'd love to hear about it.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact info -->
+      <div class="contact-info reveal">
+        <!-- TODO: Replace the email, LinkedIn and GitHub below -->
+        <a href="mailto:your-email@example.com" class="contact-line glass">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h4>Email</h4><p>your-email@example.com</p></div>
+        </a>
+        <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" class="contact-line glass">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <div><h4>LinkedIn</h4><p>linkedin.com/in/your-handle</p></div>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" rel="noopener" class="contact-line glass">
+          <i class="fa-brands fa-github"></i>
+          <div><h4>GitHub</h4><p>github.com/your-username</p></div>
+        </a>
+        <!-- TODO: Link your CV/resume PDF here (e.g. upload cv.pdf to the repo) -->
+        <a href="#" target="_blank" rel="noopener" class="contact-line glass">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <div><h4>Resume</h4><p>Download my CV</p></div>
+        </a>
+      </div>
+
+      <!-- Contact form (front-end only for now) -->
+      <form class="contact-form glass reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <p class="form-note" id="formNote"></p>
+        <!-- NOTE: This form does not send email by itself. To make it work, connect a
+             service like Formspree (https://formspree.io) or EmailJS and update script.js. -->
+      </form>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <p>Designed &amp; built by <strong>Rolande Solomons</strong> · <span id="year"></span></p>
+    <div class="footer-socials">
+      <a href="https://github.com/your-username" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:your-email@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
