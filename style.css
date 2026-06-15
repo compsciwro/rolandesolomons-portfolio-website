@@ -462,3 +462,37 @@ ul { list-style: none; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---- Level 01 collage "loot" frame (dream car) ---- */
+.loot-card {
+  position: relative;
+  max-width: 460px;
+  margin: 46px auto 0;
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 rgba(233,138,169,0.45);
+  padding: 14px 14px 12px;
+  transform: rotate(-2deg);
+  transition: transform .3s;
+}
+.loot-card:hover { transform: rotate(0); }
+.loot-card img {
+  width: 100%;
+  display: block;
+  border: 2px solid var(--ink);
+  background: #fff;
+}
+.loot-card figcaption {
+  font-family: var(--hand);
+  font-size: 1.25rem;
+  color: var(--ink);
+  text-align: center;
+  padding-top: 12px;
+}
+.loot-rarity {
+  display: block;
+  font-family: var(--pixel);
+  font-size: .5rem;
+  color: var(--pink-deep);
+  margin-bottom: 8px;
+}
