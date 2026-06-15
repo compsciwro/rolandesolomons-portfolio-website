@@ -320,9 +320,8 @@ ul { list-style: none; }
 .status.locked { background: var(--beige); color: var(--ink-soft); }
 
 .mission-shot {
-  width: 100%; aspect-ratio: 16/10; object-fit: contain;
-  background: var(--cream);
-  border: 2px solid var(--ink); margin-bottom: 16px; display: block;
+  width: 100%; height: auto; display: block;
+  border: 2px solid var(--ink); margin-bottom: 16px;
 }
 .placeholder-shot {
   display: grid; place-items: center;
