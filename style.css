@@ -471,16 +471,16 @@ ul { list-style: none; }
   font-family: var(--hand);
   font-size: 1.45rem;
   color: var(--pink-deep);
-  text-align: right;
+  text-align: center;
   transform: rotate(-3deg);
-  margin: 26px 18px -2px 0;
+  margin: 26px 0 -2px;
 }
 
 /* ---- Level 01 collage "loot" frame (dream car) ---- */
 .loot-card {
   position: relative;
   max-width: 250px;            /* small frame */
-  margin: 0 0 0 auto;          /* sits on the right, under the stats */
+  margin: 0 auto;              /* centered under the stats */
   background: var(--paper);
   border: 4px solid var(--pink-pop);   /* pink frame */
   box-shadow: 6px 6px 0 rgba(217,98,138,0.30);
