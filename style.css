@@ -232,7 +232,7 @@ ul { list-style: none; }
 .char-meta { padding-top: 12px; text-align: center; }
 .char-name { font-family: var(--pixel); font-size: .8rem; color: var(--ink); }
 .char-class { font-family: var(--hand); font-size: 1.15rem; color: var(--pink-deep); }
-.card-note { margin-top: 12px; font-family: var(--hand); font-size: 1.3rem; color: var(--ink-soft); transform: rotate(-3deg);
+.card-note { margin-top: 30px; font-family: var(--hand); font-size: 1.3rem; color: var(--ink-soft); transform: rotate(-3deg);
 }
 
 /* washi tape */
