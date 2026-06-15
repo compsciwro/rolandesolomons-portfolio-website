@@ -220,7 +220,7 @@ ul { list-style: none; }
 .char-card:hover { transform: rotate(0); }
 .char-photo {
   width: 100%; aspect-ratio: 4/5; object-fit: cover;
-  border: 2px solid var(--ink); filter: grayscale(1) contrast(1.05);
+  border: 2px solid var(--ink); filter: none;
   display: block;
 }
 .placeholder-photo {
