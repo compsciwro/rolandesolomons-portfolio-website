@@ -6,6 +6,14 @@
             footer year, + a little Konami-code easter egg.
    ===================================================================== */
 
+/* Always open the page at the very top (stop the browser from restoring
+   the last scroll position, e.g. on iPad Safari). */
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+window.addEventListener('load', () => {
+  // only force top when the URL has no #section anchor
+  if (!window.location.hash) window.scrollTo(0, 0);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* -------------------------------------------------------------------
