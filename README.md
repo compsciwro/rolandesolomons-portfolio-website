@@ -13,7 +13,7 @@ The website uses a light visual theme with pink and cream aspects, animated grad
 ## 🌐 Live Website
 
 **View the portfolio here:**
-`https://your-username.github.io/rolandesolomons-portfolio-website/`
+  `https://compsciwro.github.io/rolandesolomons-portfolio-website/`
 
 ## ✨ Features
 
